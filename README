@@ -1,11 +1,25 @@
+Для запуска поекта необходимо сделать следующие:
+1. скапировать файл .env.temp и переименовать его в .env;
+2. Заполнить переменные в файле .env (Преведены ниже);
+3. Запустить docker-compose build, а затем docker-compose up; (docker-compose up --build)
+Проект запущен.
+
+Для тестирования выполнить команду  $ make run_tests
+
+
+Переменные вертуального окружения.
+# секретный ключ
 SECRET_KEY=
 DEBUG=True
 
+#Разрешить Redis без пароля
 ALLOW_EMPTY_PASSWORD=yes
+# Или установить пароль.
 REDIS_PASSWORD=
 REDIS_HOST=redis
 REDIS_PORT=6379
 
+# Переменны postgres
 POSTGRES_DB='simple_db'
 POSTGRES_USER='user'
 POSTGRES_PASSWORD=
