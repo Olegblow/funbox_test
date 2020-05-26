@@ -19,7 +19,6 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -31,6 +30,7 @@ INSTALLED_APPS = [
 
     # 3th party
     'rest_framework',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +125,10 @@ REST_FRAMEWORK = {
     #     'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     # ]
 }
+
+
+# redis config
+# ----------------------------------------------------------------------------
+REDIS_HOST = os.getenv('REDIS_HOST', 'redis')
+REDIS_PORT = os.getenv('REDIS_PORT', '6379')
+

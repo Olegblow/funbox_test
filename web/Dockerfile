@@ -1,5 +1,6 @@
 FROM python:3.7-alpine
 
+COPY ./pytest.ini pytest.ini
 COPY ./requirements.txt requirements.txt
 COPY ./app /app
 

@@ -1,1 +1,2 @@
-from .index import Index
+from .visited_views import VisitedLinks
+from .visited_views import VisitedDomains
