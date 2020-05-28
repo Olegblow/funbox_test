@@ -4,6 +4,8 @@
 3. Запустить docker-compose build, а затем docker-compose up; (docker-compose up --build)
 Проект запущен.
 
+сервис будет распологатся по порту 8080. на localhost.
+
 Для тестирования выполнить команду  $ make run_tests
 
 
